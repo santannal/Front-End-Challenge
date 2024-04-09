@@ -84,7 +84,7 @@ input:focus {
     border-right: 7px solid #2638DB;
     padding: 30px;
     border-radius: 6px;
-    width: 200px;
+    width: 220px;
     box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -97,7 +97,9 @@ input:focus {
 img {
     width: 100px;
     height: 100px;
-    margin-left: 6px;
+    margin-left: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -108,7 +110,7 @@ button {
     border-radius: 6px;
     width: 100px;
     margin-top: 25px;
-    margin-left: 5px;
+    margin-left: 8px;
     cursor: pointer;
 }
 
@@ -120,4 +122,46 @@ button:hover {
 .creditos-txt {
     color: white;
     text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .enquete-content {
+        width: 90%;
+    }
+
+    .input-section {
+        box-sizing: border-box;
+        margin-left: 42px;
+    }
+
+    .card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+        margin-left: 35%;
+        box-sizing: border-box;
+    }
+
+    button {
+        margin-left: 30%;
+        box-sizing: border-box;
+    }
+
+    .card-title {
+        margin-left: 2%;
+        box-sizing: border-box;
+    }
 }
